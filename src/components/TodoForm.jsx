@@ -8,7 +8,7 @@ function TodoForm({ handleRefresh }) {
     e.preventDefault();
 
     // Send the data to the Express API
-    const res = await fetch('http://localhost:3000/todos/', {
+    const res = await fetch('https://react-mvp-api.onrender.com/todos', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

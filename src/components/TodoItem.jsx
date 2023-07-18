@@ -22,7 +22,7 @@ const TodoItem = ({ todo, handleRefresh }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/todos/${todo.id}`, {
+      const res = await fetch(`https://react-mvp-api.onrender.com/${todo.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const TodoItem = ({ todo, handleRefresh }) => {
   const handleDeleteClick = async () => {
     if (window.confirm('Are you sure you want to delete this todo?')) {
       try {
-        const res = await fetch(`http://localhost:3000/todos/${todo.id}`, {
+        const res = await fetch(`https://react-mvp-api.onrender.com/todos/${todo.id}`, {
           method: 'DELETE',
         });
 

@@ -14,7 +14,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const res = await fetch('http://localhost:3000/todos/');
+      const res = await fetch('https://react-mvp-api.onrender.com/todos');
       const data = await res.json();
       setTodos(data);
     } catch (error) {
@@ -24,7 +24,7 @@ function App() {
 
   const handleRefresh = async () => {
     try {
-      const res = await fetch('http://localhost:3000/todos/');
+      const res = await fetch('https://react-mvp-api.onrender.com/todos');
       const data = await res.json();
       setTodos(data);
     } catch (error) {
