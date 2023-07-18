@@ -1,0 +1,21 @@
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .loading {
+    background-color: #BEF4FE;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 74px;
+  }
+  
+  .dot {
+    animation: blink 1s infinite;
+    animation-delay: calc(0.1s * var(--index));
+  }
+  
