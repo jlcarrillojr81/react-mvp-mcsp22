@@ -22,7 +22,7 @@ const TodoItem = ({ todo, handleRefresh }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`https://react-mvp-api.onrender.com/${todo.id}`, {
+      const res = await fetch(`https://react-mvp-api.onrender.com/todos/${todo.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
