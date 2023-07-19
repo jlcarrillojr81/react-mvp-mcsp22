@@ -7,7 +7,6 @@ function TodoForm({ handleRefresh }) {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    // Send the data to the Express API
     const res = await fetch('https://react-mvp-api.onrender.com/todos', {
       method: 'POST',
       headers: {
@@ -20,11 +19,9 @@ function TodoForm({ handleRefresh }) {
     });
 
     if (res.ok) {
-      // Clear the form inputs
       setTodoInput('');
       setLocationInput('');
 
-      // Refresh the todos after successful submission
       handleRefresh();
     } else {
       console.error('Error saving todo to the database');

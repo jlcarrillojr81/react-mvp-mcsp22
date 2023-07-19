@@ -27,11 +27,3 @@ export default Loading;
 
 
 
-// import React from 'react'
-// import './App.css'
-
-// function Loading() {
-//     return <h1>Loading</h1>
-// }
-
-// export default Loading

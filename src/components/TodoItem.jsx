@@ -35,7 +35,7 @@ const TodoItem = ({ todo, handleRefresh }) => {
       }
 
       setIsEditMode(false);
-      handleRefresh(); // Refresh todos after successful update
+      handleRefresh(); 
     } catch (error) {
       console.error(error);
     }
@@ -53,7 +53,7 @@ const TodoItem = ({ todo, handleRefresh }) => {
         }
 
         setIsEditMode(false);
-        handleRefresh(); // Refresh todos after successful delete
+        handleRefresh(); 
       } catch (error) {
         console.error(error);
       }
@@ -97,18 +97,3 @@ export default TodoItem;
 
 
 
-// const TodoItem = ({todo}) => {
-
-//     const handleClick = (e) => {
-//         console.log(e.currentTarget.id)
-//     }
-
-//     return (
-//         <div className="card" onClick={handleClick} id={todo.id}>
-//             <h1>"{todo.todo}"</h1>
-//             <h1>({todo.location})</h1>
-//         </div>
-//     )
-// }
-
-// export default TodoItem
